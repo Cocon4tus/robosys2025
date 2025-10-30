@@ -1,0 +1,20 @@
+#!/home/k0ta/anaconda3/bin/python3
+# SPDX-FileCopyrightText: 2025 kotaro sato <付けたければobake831@gmail.com>
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+ans = 0.0
+for line in sys.stdin:
+
+    try: 
+        ans += int(line)  #intは文字列を整数に（失敗すると例外発生）　　　　　　　　　　　　
+    
+    except:
+        ans += float(line)
+        
+print(ans)
+
+
+
+
