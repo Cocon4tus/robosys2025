@@ -1,4 +1,4 @@
-#!/home/k0ta/anaconda3/bin/python3                        
+#!/usr/bin/env python3                        
 # SPDX-FileCopyrightText: 2025 kotaro sato <obake831@gmail.com>
 # SPDX-License-Identifier: BSD-3-Clause
 
