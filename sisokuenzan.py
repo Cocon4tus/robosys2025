@@ -18,5 +18,6 @@ for c in data:
 
 print(eval(data))
 
+#s
 
 
