@@ -17,7 +17,3 @@ for c in data:
         sys.exit(1)
 
 print(eval(data))
-
-#s
-
-
