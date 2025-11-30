@@ -4,31 +4,19 @@
 
 import sys
 
-num1 = int(input('a= :'))
-num2 = int(input('b= :'))
+data = sys.stdin.read().strip()
 
-choice = input('演算子は？')
+if data == "":
+    sys.exit(0)
 
-if choice == '+':
+allowed = "0123456789+-*/(). "
 
-    result = num1 + num2
-    print(result)
+for c in data:
+    if c not in allowed:
+        print("error")
+        sys.exit(1)
 
-elif choice == '-':
+print(eval(data))
 
-    result = num1 - num2
-    print(result)
-
-elif choice == '*':
-    
-    result = num1 * num2
-    print(result)
-elif choice == '/':
-    
-    result = num1 / num2
-    print(result)
-
-else:
-    print("error")
 
 
