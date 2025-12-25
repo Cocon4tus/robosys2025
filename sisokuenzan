@@ -15,6 +15,7 @@ allowed = "0123456789+-*/(). "
 
 for c in data:
     if c not in allowed:
+        print(f"Error: Invalid character '{c}'", file=sys.stderr)
         sys.exit(1)
 
 try:
@@ -24,6 +25,7 @@ try:
 
 
 except Exception:
+    print("Error: Calculation failed", file=sys.stderr)
     sys.exit(1)
 
 
