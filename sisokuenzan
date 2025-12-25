@@ -24,6 +24,6 @@ except Exception:
     sys.exit(1)
 
 print(result)
-sys.exit(1)
+sys.exit(0)
 
 
