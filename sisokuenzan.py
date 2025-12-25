@@ -9,11 +9,22 @@ data = sys.stdin.read().strip()
 if data == "":
     sys.exit(0)
 
-allowed = "0123456789+-*/(). "
+
+allowed = "0123456789+-*/()."
+
 
 for c in data:
     if c not in allowed:
-        print("error")
         sys.exit(1)
 
-print(eval(data))
+
+
+try:
+    result = eval(data)
+except Exception:
+    sys.exit(1)
+
+print(result)
+sys.exit(0)
+
+
