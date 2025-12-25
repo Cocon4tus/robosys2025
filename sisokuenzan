@@ -18,7 +18,6 @@ for c in data:
         sys.exit(1)
 
 
-
 try:
     result = eval(data)
 except Exception:
